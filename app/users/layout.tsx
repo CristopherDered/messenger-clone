@@ -7,7 +7,7 @@ export default async function UsersLayout({ children }: { children: React.ReactN
 
     const users = await getUsers();
     return (
-        // @ts-expect-error 
+        
         <Sidebar>
             <div className="h-full ">
                 <UserList items={users} /> 
